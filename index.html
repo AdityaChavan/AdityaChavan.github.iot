@@ -35,7 +35,12 @@ background-color: white;
 padding-left: 10vw;
 padding-right: 10vw;
 }
-
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
 
 h1.hello {
     animation-duration: 2s;
@@ -62,6 +67,10 @@ border-radius: 50%;
 height:350px;
 width:350px;
 animation-delay:3s;
+max-height: 40vw;
+max-width:40vw;
+min-height:200px;
+min-width:200px;
 }
 
 </style>
@@ -76,11 +85,11 @@ animation-delay:3s;
 			<ul class="nav navbar-nav" >
 				  <li class="active" >
 					  <a class="nav_ele animated zoomIn" style="animation-delay: 2s;" href="#linktotop" rel="rel1">Home</a></li>
-				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 2.2s;" href="#start" rel="rel1">About Me</a></li>
+				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 2.2s;" href="#start" rel="rel1">About</a></li>
 				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 2.4s;" href="#projects" rel="rel1">Projects</a></li>
 				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 2.6s;" href="#programming" rel="rel1">Programming</a></li>
 				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 2.8s;" href="#misc" rel="rel1">Other</a></li>
-				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 3s;" href="#contact" rel="rel1">Contact me</a></li>   
+				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 3s;" href="#contact" rel="rel1">Contact</a></li>   
 			</ul>
 		 </div>
 	</nav>
@@ -108,16 +117,29 @@ animation-delay:3s;
 	<br>
 	<h2>Education</h2>
 	<br>
+	<div class="d-flex justify-content-between">
+	<div class="d-flex flex-row">
+	<img src="GT.gif" style="width:80px; height:50px; padding-right:30px;">
 	<p><strong>Georgia Institute of Technology</strong><br>
 	Masters of Science in ECE, graduating Dec 2018.
 	<p>
+	</div>
+	<div class="d-flex flex-row">
+	<img src="UM.jpg"  style="width:80px; height:50px; padding-right:30px;">
 	<p><strong>University of Mumbai</strong><br>
 	Bachelors of Engineering in Electronics, Class of 2016-17</p>
+	</div>
+	<div></div>
+	</div>
 	<br>
 	<h2>Experience</h2>
 	<br>
+	<div class="d-flex flex-row">
+	<img src="HL.png" style="width:80px; height:50px; padding-right:30px;">
 	<p><strong>Software Development Intern</strong><br>
 	Halliburton Energy Services<p>
+	<br>
+	</div>
 	</p>
 	<br>
 	<h2>Coursework</h2>
@@ -148,17 +170,17 @@ animation-delay:3s;
 		</div>
 	<a name="projects"></a>
 	
-	<br>
+	<br><br>
 	<h2>Projects</h2>	
 	<br>
 	<p>
 	<strong>Automatic Determination of Cardiac Volumes from MRI Scans</strong>, 2018<br>
 	A project designed to estimate the cardiac volume of a heart from a MRI scan, and to compare the accuracy of various machine learning methods used to estimate the same. Code written in python and CUDA.
-	Link to the project website: <a href="https://adityachavan08.github.io/">Link</a>.
+	<a href="https://adityachavan08.github.io/">Report</a>.
 	<br>
 	<br>
 	<strong>Breaking CAPTCHA codes</strong>, 2018<br>
-	Designing a bot that can succesfully break captchas. Our model was able to decode text-based as well as mathematical Captchas with upto 82% accuracy. Code written in C++.
+	Designing a bot that can succesfully break captchas. Our model was able to decode text-based as well as mathematical Captchas with upto 82% accuracy. Code written in C++. <a href="APT.pdf">Report</a>
 	<br>
 	<br>
 	<strong>Implementation of a Convolutional Neural Network on a GPU kernel using CUDA</strong>, 2018<br>
@@ -307,12 +329,8 @@ animation-delay:3s;
 		
 		
 		
-	</div>		
+	</div>	
 	
-    <script>
-	function scrollDown(){
-	
-	}
 	</script>
     <!-- SCRIPTS -->
     <!-- Scrolling script -->	
@@ -353,6 +371,11 @@ animation-delay:3s;
 		  });
 		</script>
 
+    <script>
+	function scrollDown(){
+	
+	}
+	
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
