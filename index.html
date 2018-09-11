@@ -24,7 +24,7 @@ Again, thank you for browsing through the code and reaching here. I am honoured!
 body{
 min-width: 800px;
 min-height: 500px;
-padding-top:6vh;
+
 }
 	
 .heroimage {
@@ -36,9 +36,7 @@ padding-left: 10vw;
 padding-right: 10vw;
 }
 a.anchor {
-    display: block;
-    position: relative;
-    top: -200px;
+  top: -200px;
     visibility: hidden;
 }
 
@@ -57,15 +55,24 @@ h4.hello {
 ul {
   list-style-type: none;
 }
+footer{
+background-color:gray;
+color:white;
+}
 .nav_ele{
 color:white;
 padding-right:10px;
 padding-top:10px;
 }
+.logo{
+height:60px;
+width:60px;
+padding:10px;
+}
 .myphoto{
 border-radius: 50%;
-height:350px;
-width:350px;
+height:300px;
+width:300px;
 animation-delay:3s;
 max-height: 40vw;
 max-width:40vw;
@@ -82,7 +89,7 @@ min-width:200px;
 			<div >
 			  <a class="navbar-brand animated zoomIn" style="font-size: 4vh; font-weight: bold; padding-left:50px; animation-duration:1s;" href="#">AC</a>
 			</div>
-			<ul class="nav navbar-nav" >
+			<ul class="nav navbar-nav d-flex flex-row" >
 				  <li class="active" >
 					  <a class="nav_ele animated zoomIn" style="animation-delay: 2s;" href="#linktotop" rel="rel1">Home</a></li>
 				  <li><a class="nav_ele animated zoomIn" style="animation-delay: 2.2s;" href="#start" rel="rel1">About</a></li>
@@ -385,5 +392,16 @@ min-width:200px;
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
+
+<footer>
+<h2 class="flex-center" style="padding-top:20px;">Contact</h2>
+
+<div  style="padding-top:20px; padding-bottom:40px;" class="flex-center">
+<div class="">
+<div class="d-flex " style="align-items:center"><img src="github.png" class="logo" href="https://github.com/AdityaChavan"><p>www.github.com/AdityaChavan</p></div>
+<div class="d-flex " style="align-items:center"><img src="linkedin.png" class="logo" href="https://www.linkedin.com/in/aditya-s-chavan/"><p>www.linkedin.com/in/aditya-s-chavan</p></div>
+<div class="d-flex " style="align-items:center"><img src="whatsapp.png" class="logo">+1 7065724505</div>
+</div></div>
+</footer>
 
 </html>
