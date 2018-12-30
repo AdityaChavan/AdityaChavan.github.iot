@@ -20,6 +20,7 @@ Again, thank you for browsing through the code and reaching here. I am honoured!
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="icon" href="ad.png">
@@ -39,7 +40,24 @@ min-width: 800px;
 min-height: 500px;
 
 }
-	
+.btnpl {
+
+  background-color: white; /* Blue background */
+  border: 1.5px solid black; /* Remove borders */
+  border-radius: 50%;
+  padding: 6px 8px; /* Some padding */
+  font-size: 12px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+.btnpl:focus {outline:0;}
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}	
 .heroimage {
     background-color: black;
 }
@@ -104,7 +122,8 @@ min-width:200px;
 </head>
 
 <body>
-	<nav class="navbar  navbar-expand-lg navbar-dark fixed-top heroimage">
+	<nav class="navbar  navbar-expand-lg navbar-dark fixed-top heroimage" style="margin-bottom: 0px;
+">
 		 <div class="container-fluid" style="height:6vh;">
 			<div >
 			  <a class="navbar-brand animated zoomIn" style="font-size: 4vh; font-weight: bold; padding-left:50px; animation-duration:1s;" href="#">AC</a>
@@ -208,13 +227,19 @@ min-width:200px;
 	<a name="projects"></a>
 	
 	<br><br>
-	<h2>Projects</h2>	
-	<br>
-	<p>
+	<h2>Projects</h2>
 	
+	<hr>	
+	<div class="row">
+	<button onclick="csprojects()" type="button" class="btnpl" style="margin: auto 10px;" ><i id="c" class="glyphicon glyphicon-plus" ></i></button>
+	<h3 style="padding: 10px; margin:0px;">Computer Science Projects</h3>
+	</div>
+	
+	<div id="cs" style="display:none;"  class="animated fadeIn">
+	<br>
 	<strong>Automatic Determination of Cardiac Volumes from MRI Scans</strong>,<i> Python, CUDA, <small>2018</small></i><br>
 	A project designed to estimate the cardiac volume of a heart from a MRI scan, and to compare the accuracy of various machine learning methods used to estimate the same. Code written in python and CUDA.
-	<a href="https://adityachavan08.github.io/">Project Website,</a> <a href="https://github.com/AdityaChavan/Automatic-Determination-of-Cardiac-Volumes-from-MRI-Scans">Git</a>.
+	<a href="https://adityachavan08.github.io/">Project Website,</a> <a href="https://github.com/AdityaChavan/Automatic-Determination-of-Cardiac-Volumes-from-MRI-Scans"target="_blank">Git</a>.
 	<br>
 	<br>
 	
@@ -223,26 +248,31 @@ min-width:200px;
 	Made for the course CS 7630: Knowledge based Artificial Intelligence. 
 	<br>
 	<br>
-		
-	<strong>Implementation of a Convolutional Neural Network on a GPU kernel</strong>,<i> CUDA C++, <small>2018</small></i><br>
-	Writing a kernel on the NVIDIA Kepler GPU, to implement a Neural network that performs basic OCR. This project involved writing CUDA kernels that perform functions like Convolution and ReLu on large arrays of data in parallel. Distribution of memory and kernel design were researched and optimized to provide maximum performance. Code written in CUDA C++.
-	<a href="https://github.com/AdityaChavan/GPU-Architectures">Git</a>
-	<br>
-	<br>
 	
 	<strong>Stock Market Trading Agent</strong>,<i> Python, <small>2018</small></i><br>
 	Using Machine Learning to make stock market predictions. Also compared performance of various ML Techniques.
 	<br>
 	<br>
-	
-	
+	<strong>Breaking CAPTCHA codes</strong>,<i> C++, <small>2017</small></i><br>
+	Designing a bot that can succesfully break captchas. Our model was able to decode text-based as well as mathematical Captchas with upto 82% accuracy. <a href="APT.pdf">Report,</a> <a href="https://github.com/AdityaChavan/Captcha-Solver"target="_blank">Git</a>
+	<br>
+
+	</div>
+	<hr>
+	<div class="row">
+	<button onclick="etrxprojects()" type="button" class="btnpl" style="margin: auto 10px;" ><i id="etr" class="glyphicon glyphicon-plus" ></i></button>
+	<h3 style="padding: 10px; margin:0px;">Electrical Engineering Projects</h3>
+	</div>
+
+	<div id="etrx" style="display:none;" class="animated fadeIn" >
+	<br>
+	<strong>Implementation of a Convolutional Neural Network on a GPU kernel</strong>,<i> CUDA C++, <small>2018</small></i><br>
+	Writing a kernel on the NVIDIA Kepler GPU, to implement a Neural network that performs basic OCR. This project involved writing CUDA kernels that perform functions like Convolution and ReLu on large arrays of data in parallel. Distribution of memory and kernel design were researched and optimized to provide maximum performance. Code written in CUDA C++.
+	<a href="https://github.com/AdityaChavan/GPU-Architectures"target="_blank">Git</a>
+	<br>
+	<br>
 	<strong>Design of Circuit Logic Simulator with Fault Simulation</strong>,<i> C++, <small>2018</small></i><br>
 	This simulator will simulate any electrical circuit given and can find the output given the input logic values. The simulator can also generate input test vectors to test any given stuck-at fault in the circuit or test the entire circuit. The algorithm used is Path Oriented Decision Making (PODEM).<br>
-	<br>
-	
-	<strong>Breaking CAPTCHA codes</strong>,<i> C++, <small>2018</small></i><br>
-	Designing a bot that can succesfully break captchas. Our model was able to decode text-based as well as mathematical Captchas with upto 82% accuracy. <a href="APT.pdf">Report,</a> <a href="https://github.com/AdityaChavan/Captcha-Solver">Git</a>
-	<br>
 	<br>
 
 	<strong>Implementation of Cache policies in a Superscalar Processor</strong>,<i> C++, <small>2017</small></i><br>
@@ -268,13 +298,52 @@ min-width:200px;
 	Developed an Android application that would use voice commands to control devices in the house. Communication would occur wirelessly over bluetooth. Written using Android and Arduino microcontrollers.
 	<br>
 	<br>
-	</p>
+	</div>
+	<hr>
+
+
+	
+
+	<script>
+	function etrxprojects() {
+	  var x = document.getElementById("etrx");
+	  if (x.style.display === "none") {
+	    document.getElementById("etr").className="glyphicon glyphicon-minus";
+		x.style.display = "block";
+	  } else {
+		document.getElementById("etr").className="glyphicon glyphicon-plus";
+		x.style.display = "none";
+	  }
+
+	}
+	function csprojects() {
+	  var x = document.getElementById("cs");
+	  if (x.style.display === "none") {
+		document.getElementById("c").className="glyphicon glyphicon-minus";
+		x.style.display = "block";
+	  } else {
+		document.getElementById("c").className="glyphicon glyphicon-plus";
+		x.style.display = "none";
+	  }
+	
+	}
+	
+	
+	</script>
+
+		
+
+	
+
+
+
+
 	<a name="programming"></a>
 	
 	<h2>Programming Languages I have studied</h2>	
 	<br>
-	<div class="d-flex justify-content-between">
-			<div>
+	<div class="d-flex justify-content-between" style="margin: auto">
+			<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			C<br>
 			C++<br>
@@ -283,7 +352,7 @@ min-width:200px;
 			</p>
 			</div>
 			
-			<div>
+			<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			Arduino<br>
 			Android<br>
@@ -292,7 +361,7 @@ min-width:200px;
 			</p>
 			</div>
 			
-			<div>
+			<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			HTML/CSS<br>
 			PHP<br>
@@ -301,7 +370,7 @@ min-width:200px;
 			</p>
 			</div>
 			
-			<div>
+			<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			Hadoop (AWS)<br>
 			Node.js<br>
@@ -309,13 +378,13 @@ min-width:200px;
 			Angular 6<br>
 			</p>
 			</div>
-			<div></div>
+			<div ></div>
 	</div>		
 	<br>
 	<h2>Software I have worked on</h2>
 	<br>
-	<div class="d-flex justify-content-between">
-			<div>
+	<div class="d-flex justify-content-between" >
+			<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			MATLAB<br>
 			LabView<br>
@@ -323,7 +392,7 @@ min-width:200px;
 			TensorFlow<br>
 			</p>
 			</div>
-				<div>
+				<div style=" width: 20%; margin: auto auto auto 0px;">
 			<p>
 			Altium<br>
 			NI MultiSIM<br>
@@ -331,7 +400,7 @@ min-width:200px;
 			PSpice<br>
 			</p>
 			</div>
-				<div>
+				<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			Visual Studio<br>
 			Android Studio<br>
@@ -339,7 +408,7 @@ min-width:200px;
 			Proteus<br>
 			</p>
 			</div>
-			<div>
+			<div style="margin: auto auto auto 0px;width: 20%;">
 			<p>
 			Angular 6<br>
 			Spark<br>
@@ -348,7 +417,7 @@ min-width:200px;
 			</p>
 			</div>
 
-			<div></div>
+			<div> </div>
 			
 	</div>
 	<a name="misc"></a>
@@ -356,11 +425,11 @@ min-width:200px;
 	<br>
 	<h2>Portfolio</h2>
 	<br>
-	<p>https://github.com/AdityaChavan</p>
+	<a href="https://github.com/AdityaChavan" target="_blank"><p>https://github.com/AdityaChavan</p></a>
 	<br>
 	<h2>Certifications</h2>
 	<br>
-	<p>Microsoft Technology Associate: Security Fundamentals, 2016 <a href="mts.png">Link</a>	</p>		
+	<p>Microsoft Technology Associate: Security Fundamentals, 2016 <a href="mts.png" target="_blank">Link</a>	</p>		
 	<br>
 	<h2>Workshops</h2>
 	<br>
@@ -375,7 +444,7 @@ min-width:200px;
 	</p>
 	<br>
 	<h2>Awards</h2>
-	<p>1st prize in Mumbai University At ‘Avishkar Research Convention 2016-17’. <a href="medal.jpeg">Link</a> <br>
+	<p>1st prize in Mumbai University At ‘Avishkar Research Convention 2016-17’. <a href="medal.jpeg" target="_blank">Link</a> <br>
 	3rd place in S.P.I.T. Project Mania, National Level Project Competition<br>
 	Chosen to Represent Mumbai University at the State-Level Finals of ‘AVISHKAR 16-17’<br>
 	Cash prize for standing first in the Department of Electronics on the basis of Performance in 5th and 6th Semesters<br>
