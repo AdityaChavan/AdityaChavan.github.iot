@@ -67,7 +67,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage.prototype.ionViewDidLoad = function () {
         var ga = __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_analytics__["a" /* GoogleAnalytics */];
-        ga.startTrackerWithId('G-ZQ8R9MFKF5')
+        ga.startTrackerWithId('UA-127456966-1')
             .then(function () {
             console.log('Google analytics is ready now');
             ga.trackView('test');
