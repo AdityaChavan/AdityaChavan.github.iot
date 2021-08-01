@@ -1,0 +1,169 @@
+page-home {
+    ::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+    #ioncontent {
+        --offset-bottom: auto!important;
+        --overflow: hidden;
+        overflow: hidden; /* Hide scrollbars */
+      }
+    #body{
+        min-width: 800px;
+        min-height: 500px;
+        }
+        #india{
+            margin:10px;
+            margin-left:0px;
+            height:25px;
+            width:auto;
+        }
+        .btnpl {
+        
+          background-color: white; /* Blue background */
+          border: 1.5px solid black; /* Remove borders */
+          border-radius: 50%;
+          padding: 6px 8px; /* Some padding */
+          font-size: 12px; /* Set a font size */
+          cursor: pointer; /* Mouse pointer on hover */
+        }
+        .btnpl:focus {outline:0;}
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }	
+        .heroimage {
+            background-color: black;
+        }
+        .maincontent{
+        background-color: white;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        }
+        
+        a.anchor:before {
+         display: block;
+          content: " ";
+          height: px;
+          visibility: hidden;
+        }
+        
+        
+        h1.hello {
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+            color: white;
+            font-size: 8vh;
+        }
+        h4.hello {
+            animation-duration: 2s;
+            animation-delay: 0.8s;
+            color: white;
+            font-size: 4vh;
+        }
+        ul {
+          list-style-type: none;
+        }
+        footer{
+        background-color:gray;
+        color:white;
+        font-size: small;
+        }
+        .ionicon{
+          display: none;
+        }
+        .menubutton{
+          border: none;
+          background-color: rgba(0,0,0,0);
+          color:white;
+        }
+        .arrowcontainer{
+          position:absolute;
+          bottom:50px;
+          right:50%;
+        }
+        .arrow{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+      }
+      .arrow span{
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-bottom: 2px solid rgb(167, 167, 167);
+          border-right: 2px solid rgb(90, 90, 90);
+          transform: rotate(45deg);
+          margin: -10px;
+          animation: animate 3s infinite;
+      }
+      .arrow span:nth-child(2){
+          animation-delay: -0.2s;
+      }
+      .arrow span:nth-child(3){
+          animation-delay: -0.4s;
+      }
+      @keyframes animate {
+          0%{
+              opacity: 0;
+              transform: rotate(45deg) translate(-20px,-20px);
+          }
+          50%{
+              opacity: 1;
+          }
+          100%{
+              opacity: 0;
+              transform: rotate(45deg) translate(20px,10px);
+          }
+      }
+                @media screen and (max-aspect-ratio: 1/1) {
+                  .heroimage {
+                    background-color: #000000;
+                }
+                  .topnav li {display: none;}
+                  .topnav ion-icon {
+                    display: block;
+                    float:right;
+                  }
+
+                  
+                }
+
+                @media screen and (max-aspect-ratio: 1/1) {
+                  .topnav.responsive {position: relative;}
+
+                  .topnav.responsive li {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                  }
+                }
+
+        .nav_ele{
+        color:white;
+        padding-right:10px;
+        padding-top:10px;
+        }
+        .logo{
+        height:60px;
+        width:60px;
+        padding:10px;
+        color:white;
+        
+        }
+        .myphoto{
+        border-radius: 50%;
+        height:300px;
+        width:300px;
+        animation-delay:3s;
+        max-height: 40vw;
+        max-width:40vw;
+        min-height:200px;
+        min-width:200px;
+        }
+}
