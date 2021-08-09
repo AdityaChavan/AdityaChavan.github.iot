@@ -50,10 +50,8 @@ export class HomePage {
    etrxprojects() {
     var x = document.getElementById("etrx");
     if (x.style.display === "none") {
-      document.getElementById("etr").className="glyphicon glyphicon-minus";
     x.style.display = "block";
     } else {
-    document.getElementById("etr").className="glyphicon glyphicon-plus";
     x.style.display = "none";
     }
 
