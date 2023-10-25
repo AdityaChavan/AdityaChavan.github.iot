@@ -2,6 +2,11 @@
   content: "\f102";
 }
 
+@media (max-width: 768px) {
+  .maincontent {
+    white-space: nowrap; overflow-x: auto; width: 100%;
+  } 
+}
 .ion-ios-add-circle:before {
   content: "\f101";
 }
